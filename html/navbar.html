@@ -7,19 +7,19 @@
       </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+          <li id="home-button" class="nav-item">
+            <a class="nav-link" href="/">Home</a>
           </li>
           </li>
-          <li class="nav-item dropdown">
+          <li id="projects-button" class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Projects
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">All</a>
-              <a class="dropdown-item" href="#">Full Stack</a>
-              <a class="dropdown-item" href="#">Data Science & Machine Learning</a>
-              <a class="dropdown-item" href="#">Robotics</a>
+              <a class="dropdown-item" href="projects">All</a>
+              <a class="dropdown-item" href="projects?filter=full-stack">Full Stack</a>
+              <a class="dropdown-item" href="projects?filter=data-science-ml">Data Science & Machine Learning</a>
+              <a class="dropdown-item" href="projects?filter=robotics">Robotics</a>
             </div>
           </li>
         </ul>
@@ -30,4 +30,7 @@
     <a class="navbar-brand" href="https://www.linkedin.com/in/diego-pena-stein-818648258/">
       <img src="assets/images/LI-In-Bug.png" height="50" alt="">
     </a>
+    <script>
+      highlightCurrentPage();
+    </script>
 </nav>

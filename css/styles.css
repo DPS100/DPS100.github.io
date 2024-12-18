@@ -1,3 +1,22 @@
-.hidden {
-    display: none;
+body {
+    font-family: Arial, sans-serif; /* Professional and clean font */
+    line-height: 1.5rem; /* Better readability */
+}
+
+.container {
+    max-width: 80%; /* Limit content width for readability */
+    margin: 0 auto; /* Center the content */
+    padding: 2rem; /* Add spacing around the content */
+}
+
+section {
+    margin-bottom: 2rem; /* Space between sections */
+    
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }

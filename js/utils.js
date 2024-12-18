@@ -5,9 +5,43 @@ function loadHTML(elementId, filePath) {
             return response.text();
         })
         .then(data => {
-            document.getElementById(elementId).innerHTML = data;
+            const container = document.getElementById(elementId);
+
+            // Insert the HTML content
+            container.innerHTML = data;
+
+            // Find and execute <script> tags in the loaded HTML
+            const scripts = container.querySelectorAll('script');
+            scripts.forEach((script) => {
+                const newScript = document.createElement('script');
+                newScript.textContent = script.textContent;
+
+                // Copy any attributes (like `src`)
+                Array.from(script.attributes).forEach(attr => {
+                    newScript.setAttribute(attr.name, attr.value);
+                });
+
+                // Append to the DOM to execute
+                document.body.appendChild(newScript);
+                script.remove(); // Optional: Clean up the old <script> tag
+            });
         })
         .catch(error => console.error("Error:", error));
+}
+
+function highlightCurrentPage() {
+    path = window.location.pathname;
+    switch (path) {
+        case "/":
+            document.getElementById("home-button").classList.add("active");
+            break;
+        case "/projects":
+            document.getElementById("projects-button").classList.add("active");
+            break;
+        default:
+            break;
+    }
+    console.log(path)
 }
 
 function populateProject(json, id) {
