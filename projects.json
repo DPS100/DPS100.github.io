@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Portfolio Site",
+        "date": "2024-01-15",
+        "description": "A responsive portfolio built with Bootstrap, HTML, and CSS.",
+        "role":"Creator",
+        "metadata": {
+          "images": ["assets/media/robotics.jfif", "assets/images/diego.jfif"],
+          "videos": [],
+          "links": {
+            "demo": "DPS100.github.io",
+            "github": "https://github.com/yourrepo"
+          },
+          "categories": ["full-stack"],
+          "relevance": 0.5
+        }
+    } 
+]
