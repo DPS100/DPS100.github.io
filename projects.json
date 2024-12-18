@@ -2,35 +2,49 @@
     {
         "title": "Portfolio Site",
         "date": "2024-01-15",
-        "description": "A configurable portfolio built with Bootstrap, HTML, and CSS.",
+        "description": "A custom and easily configurable portfolio built with Javascript, HTML, and CSS. I can easily incorporate a new project simply by updating a few lines in the projects.json manifest!",
         "role":"Creator",
         "metadata": {
-          "images": [],
-          "videos": [],
-          "media": [],
+          "images": [
+
+          ],
+          "videos": [
+
+          ],
+          "media": [
+
+          ],
           "links": [
             {"title": "This site!", "link": "https://dps100.github.io/"},
             {"title": "Github", "link": "https://github.com/DPS100/DPS100.github.io"}
           ],
-          "categories": ["full-stack"],
-          "relevance": 0.5
+          "categories": [
+            {"filter": "full-stack", "relevance": 0.5}
+          ]
         }
     },
     {
         "title": "Whirly Tunes",
         "date": "2024-01-15",
-        "description": "A robotic ensemble of colorful modules that produce a voicelike musical tone. I contributed to the research, prototyping, assembly, DAW communication, and creating a musical score to interface with the robot. This was my humanities final practicum in Musical Robotics, where we were tasked with creating music tailored specifically for custom robots in order to explore pitch possibilities, types of form and development, and capabilities unique to the machines the music was written for.",
+        "description": "A robotic ensemble of colorful modules that produce a voicelike musical tone. I contributed to the research, prototyping, assembly, DAW communication, and creating a musical score to interface with the robot. This was my humanities final practicum in Musical Robotics, where we were tasked with creating musical robots and complimentary scores in order to explore pitch possibilities, types of form and development, and capabilities unique to the machines.",
         "role":"Contributor",
         "metadata": {
-          "images": ["assets/images/whirly-tunes.jpg"],
-          "videos": ["https://wp.wpi.edu/musicalmachines/files/2023/12/PXL_20231215_192046095.TS_.mp4"],
-          "media": ["assets/media/Whirly-tunes.pdf"],
+          "images": [
+            "assets/images/whirly-tunes.jpg"
+          ],
+          "videos": [
+            "https://wp.wpi.edu/musicalmachines/files/2023/12/PXL_20231215_192046095.TS_.mp4"
+          ],
+          "media": [
+            "assets/media/Whirly-tunes.pdf"
+          ],
           "links": [
             {"title": "Read more", "link": "https://wp.wpi.edu/musicalmachines/2023/12/17/whirly-tunes/"},
             {"title": "Github", "link": "https://github.com/Kreeevin/WhirlyBoi"}
           ],
-          "categories": ["robotics"],
-          "relevance": 0.5
+          "categories": [
+            {"filter": "robotics", "relevance": 0.5}
+          ]
         }
     },
     {
@@ -51,7 +65,7 @@
     {
         "title": "Data Synthesizer",
         "date": "2024-01-15",
-        "description": "Final project for my graduate Machine Learning class. The goal was to train a supervised image classifier without any manually classified images by using another generative model to build the training dataset. In effect, the progran will train itself on what it believes an image will look like. We created a robust and fault-tolerant synthetic data pipeline to sequentially generate images according to each class label. This was done in order to generate images in parallel across multiple machines without losing progress if one failed. Generated roughly 4,400 images over the span of a few days, and trained convolutional neural netwoks that perfomed with an accuracy of -999% on testing and validation sets they had never seen. This could also be used to enhance existing datasets, where a model could be pre-trained on synthetic data to learn important features and later fine-tuned on real data.",
+        "description": "Final project for my graduate Machine Learning class. The goal was to train a supervised image classifier without any manually classified images by using another generative model to build the training dataset. In effect, the progran will train itself on what it believes an image will look like. We created a robust and fault-tolerant synthetic data pipeline to sequentially generate images according to each class label. This was done in order to generate images in parallel across multiple machines without losing progress if one failed. Generated roughly 4,400 images over the span of a few days, and trained convolutional neural netwoks that perfomed with an accuracy of 90% on testing and validation sets they had never seen real data for. This could also be used to enhance existing datasets, where a model could be pre-trained on synthetic data to learn important features and later fine-tuned on real data.",
         "role":"Team lead",
         "metadata": {
           "images": [],
@@ -60,7 +74,7 @@
           "links": [
             {"title": "Github", "link": "https://github.com/DPS100/DataSynthesizer"}
           ],
-          "categories": ["ai-ml"],
+          "categories": ["data-science-ml"],
           "relevance": 0.5
         }
     },
@@ -113,17 +127,27 @@
         "title": "Jazzy Judy",
         "date": "2024-01-15",
         "description": "A robot",
-        "role":"Lead Programmer",
+        "role":"Lead Programmer, autonomous, event driven architecture, vision",
         "metadata": {
-          "images": ["assets/images/judy.jfif"],
-          "videos": ["https://www.youtube.com/embed/RvorwGZfUQQ", "https://www.youtube.com/embed/l-FUae_8Po4"],
-          "media": [],
+          "images": [
+            "assets/images/judy.jfif"
+          ],
+          "videos": [
+            "https://www.youtube.com/embed/RvorwGZfUQQ",
+            "https://www.youtube.com/embed/l-FUae_8Po4"
+          ],
+          "media": [
+
+          ],
           "links": [
             {"title": "Angelbotics Website", "link": "https://angelbotics.org"},
             {"title": "Github", "link": "https://github.com/Angelbots1339/2022_Competition_Season"}
           ],
-          "categories": ["robotics"],
-          "relevance": 0.5
+          "categories": [
+            {"filter": "robotics", "relevance": 0.5},
+            {"filter": "full-stack", "relevance": 0.5},
+            {"filter": "data-science-ml", "relevance": 0.5}
+          ]
         }
     }
 ]
