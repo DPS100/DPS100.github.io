@@ -2,7 +2,7 @@
     {
         "title": "Portfolio Site",
         "date": "2024-01-15",
-        "description": "A responsive portfolio built with Bootstrap, HTML, and CSS.",
+        "description": "A configurable portfolio built with Bootstrap, HTML, and CSS.",
         "role":"Creator",
         "metadata": {
           "images": [],
@@ -17,9 +17,57 @@
         }
     },
     {
+        "title": "Whirly Tunes",
+        "date": "2024-01-15",
+        "description": "A robotic ensemble of colorful modules that produce a voicelike musical tone. I contributed to the research, prototyping, assembly, DAW communication, and creating a musical score to interface with the robot. This was my humanities final practicum in Musical Robotics, where we were tasked with creating music tailored specifically for custom robots in order to explore pitch possibilities, types of form and development, and capabilities unique to the machines the music was written for.",
+        "role":"Contributor",
+        "metadata": {
+          "images": ["assets/images/whirly-tunes.jpg"],
+          "videos": ["https://wp.wpi.edu/musicalmachines/files/2023/12/PXL_20231215_192046095.TS_.mp4"],
+          "media": ["assets/media/Whirly-tunes.pdf"],
+          "links": [
+            {"title": "Read more", "link": "https://wp.wpi.edu/musicalmachines/2023/12/17/whirly-tunes/"},
+            {"title": "Github", "link": "https://github.com/Kreeevin/WhirlyBoi"}
+          ],
+          "categories": ["robotics"],
+          "relevance": 0.5
+        }
+    },
+    {
+        "title": "Stop Motion",
+        "date": "2024-01-15",
+        "description": "Short film for my high school Film as Literature class. I designed, iterated, and 3D printed a custom armature from scratch, prototyping different kinds of actuating joints, hands, and facial expressions. I also created a short interface with OpenCV to quickly capture frames and play videos taken from these frames to preview the armature's movement.",
+        "role":"Creator",
+        "metadata": {
+          "images": [],
+          "videos": ["https://www.youtube.com/embed/1XkwiTnlhTY"],
+          "media": [],
+          "links": [
+          ],
+          "categories": ["robotics"],
+          "relevance": 0.5
+        }
+    },
+    {
+        "title": "Data Synthesizer",
+        "date": "2024-01-15",
+        "description": "Final project for my graduate Machine Learning class. The goal was to train a supervised image classifier without any manually classified images by using another generative model to build the training dataset. In effect, the progran will train itself on what it believes an image will look like. We created a robust and fault-tolerant synthetic data pipeline to sequentially generate images according to each class label. This was done in order to generate images in parallel across multiple machines without losing progress if one failed. Generated roughly 4,400 images over the span of a few days, and trained convolutional neural netwoks that perfomed with an accuracy of -999% on testing and validation sets they had never seen. This could also be used to enhance existing datasets, where a model could be pre-trained on synthetic data to learn important features and later fine-tuned on real data.",
+        "role":"Team lead",
+        "metadata": {
+          "images": [],
+          "videos": [],
+          "media": ["https://docs.google.com/presentation/d/e/2PACX-1vRED2ZWsUFcxnkx_TggazQzzxoHYn2Ir4EPJD5a2891_L3uKNd2oMGYfmbxnZTrtQ/embed?start=false&loop=true&delayms=3000"],
+          "links": [
+            {"title": "Github", "link": "https://github.com/DPS100/DataSynthesizer"}
+          ],
+          "categories": ["ai-ml"],
+          "relevance": 0.5
+        }
+    },
+    {
         "title": "Turing Machine Simulation",
         "date": "2024-01-15",
-        "description": "Beep boop.",
+        "description": "Final project for my Foundations of Computer Science class. This project consisted of two parts: Simulation of a turing machine, and the creation of a turing machine that could recognize if a string is a subsequence of another string. The first part was not that bad, as a turing machine is the simplest form of a computer. You can provide the program with a configuration file that defines the alphabet and state machine (essentially an instruction set for how the turing machine will run). Creating the algorithm and configuration file to recognize a subsequence was much more difficult, however, especially since I limited myself to a language of only two characters. See the readme file in the project github for a more detailed description of the program.",
         "role":"Creator",
         "metadata": {
           "images": [],
