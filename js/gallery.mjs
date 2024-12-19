@@ -1,8 +1,9 @@
 export class Gallery {
-    constructor(images, DOMid) {
+    constructor(images, imageElement) {
         this.images = images;
-        this.DOMid = DOMid;
+        this.imageElement = imageElement;
         this.index = 0;
+        this.changeImage(0);
     }
 
     changeImage(direction) {
@@ -12,6 +13,6 @@ export class Gallery {
             this.index = this.images.length - 1;
         }
         this.index %= this.images.length;
-        document.getElementById(this.DOMid).src = this.images[this.index]
+        this.imageElement.src = this.images[this.index]
     } 
 }

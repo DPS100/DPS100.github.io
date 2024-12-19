@@ -7,7 +7,8 @@ export function loadHTML(elementId, filePath) {
             return response.text();
         })
         .then(data => {
-            const container = document.getElementById(elementId);
+
+            const container = typeof elementId === "string" ? document.getElementById(elementId) : elementId;
 
             // Insert the HTML content
             container.innerHTML = data;
@@ -60,7 +61,7 @@ export function populateProject(json, id) {
         }
     }
 
-    populateDiv(clone, json, 'images', 'image-template', 'images')
+    // populateDiv(clone, json, 'images', 'image-template', 'images')
     populateDiv(clone, json, 'videos', 'video-template', 'videos')
     populateDiv(clone, json, 'media', 'media-template', 'media')
     
@@ -78,6 +79,13 @@ export function populateProject(json, id) {
         link_div.appendChild(link_template);
     }
 
+    if(json.metadata.images.length > 0) {
+        var galleryDiv = clone.getElementsByClassName("gallery-container")[0];
+        loadHTML(galleryDiv, "html/gallery.html").then(() => {
+            populateGallery(json.metadata.images, galleryDiv)
+        })
+    }
+
     element.parentElement.appendChild(clone)
 }
 
@@ -93,12 +101,12 @@ function populateDiv(parent, json, div_name, template_name, metadata_target) {
     }
 }
 
-export function populateGallery(images, galleryId) {
-    const galleryDiv = document.getElementById(galleryId);
+export function populateGallery(images, galleryDiv) {
+    galleryDiv.style.display = "flex"; 
     const wrapper = galleryDiv.getElementsByClassName("image-wrapper")[0];
     const image = wrapper.getElementsByClassName("gallery-member-image")[0];
-    image.id = galleryDiv.id + "-image";
-    const gallery = new Gallery(images, image.id);
+    // image.id = galleryDiv.id + "-image";
+    const gallery = new Gallery(images, image);
     galleryDiv.getElementsByClassName("right-arrow")[0].addEventListener('click', () => {gallery.changeImage(1);})
     galleryDiv.getElementsByClassName("left-arrow")[0].addEventListener('click', () => {gallery.changeImage(-1);})
 }

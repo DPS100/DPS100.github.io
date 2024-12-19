@@ -8,17 +8,17 @@
 </head>
 <body>
     <script type="module">
-        import { loadHTML, populateGallery } from './js/utils.mjs';
+        import {loadHTML, populateProject} from "./js/utils.mjs"
 
-        const images = ["assets/images/judy.jfif", "assets/images/diego.jfif"];
-        loadHTML("gallery-placeholder1", "html/gallery.html").then(() => {
-            populateGallery(images, "gallery-placeholder1")
-        })
-        loadHTML("gallery-placeholder2", "html/gallery.html").then(() => {
-            populateGallery(images, "gallery-placeholder2")
-        })
+        loadHTML("bootstrap-placeholder", "html/bootstrap.html");
+
+        loadHTML("project-placeholder", "html/project-template-v2.html").then(() => {fetch('projects.json').then(response => {return response.json()}).then(data => {
+            console.log(data[0])
+            populateProject(data[0], "project-template")
+        })})
     </script>
-    <div id="gallery-placeholder1" class="gallery-container"></div>
-    <div id="gallery-placeholder2" class="gallery-container"></div>
+    <div id="project-placeholder" class="gallery-container"></div>
+    <div id="bootstrap-placeholder"></div>
+
 </body>
 </html>

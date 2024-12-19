@@ -8,7 +8,12 @@
         <h3>Links</h3>
         <p class="link-template" style="display: none;"><a href="https://example.com" class="link-a-template" >asas</a></p>
     </div>
-    <div id="gallery-placeholder" class="gallery-container" style="display: none;"></div>
+    <script type="module">
+        import { loadHTML, populateGallery } from './js/utils.mjs';
+    
+        const images = ["assets/images/judy.jfif", "assets/images/diego.jfif"];
+    </script>
+    <div id="gallery-placeholder" class="gallery-container"></div>
     <div class="videos" style="display: none;">
         <h3>Videos</h3>
         <iframe
