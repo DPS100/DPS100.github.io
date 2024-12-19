@@ -1,17 +1,34 @@
 body {
-    font-family: Arial, sans-serif; /* Professional and clean font */
-    line-height: 1.5rem; /* Better readability */
+    font-family: Arial, sans-serif;
+    line-height: 1.5rem;
 }
 
 .container {
-    max-width: 80%; /* Limit content width for readability */
-    margin: 0 auto; /* Center the content */
-    padding: 2rem; /* Add spacing around the content */
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 section {
-    margin-bottom: 2rem; /* Space between sections */
-    
+    margin-bottom: 2rem;
+}
+
+.image-template {
+    width: 70%;
+    height: 55%;
+    margin: auto;
+}
+
+.media-template {
+    width: 70%;
+    height: 55%;
+    margin: auto;
+}
+
+.video-template {
+    width: 70%;
+    height: 55%;
+    margin: auto;
 }
 
 .image-wrapper img {
