@@ -26,7 +26,7 @@
     {
         "title": "Whirly Tunes",
         "date": "2024-01-15",
-        "description": "A robotic ensemble of colorful modules that produce a voicelike musical tone. I contributed to the research, prototyping, assembly, DAW communication, and creating a musical score to interface with the robot. This was my humanities final practicum in Musical Robotics, where we were tasked with creating musical robots and complimentary scores in order to explore pitch possibilities, types of form and development, and capabilities unique to the machines.",
+        "description": "A robotic ensemble of colorful modules that produce a voicelike musical tone. I contributed to the research, prototyping, assembly, DAW communication, and creating a musical score to interface with the robot. This was my humanities final practicum in Musical Robotics, where we were tasked with creating musical robots and complimentary scores in order to explore pitch possibilities, types of form and development, and capabilities unique to machines.",
         "role":"Contributor",
         "metadata": {
           "images": [
@@ -126,8 +126,8 @@
     {
         "title": "Jazzy Judy",
         "date": "2024-01-15",
-        "description": "A robot",
-        "role":"Lead Programmer, autonomous, event driven architecture, vision",
+        "description": "A robot, autonomous, event driven architecture, vision",
+        "role":"Lead Programmer",
         "metadata": {
           "images": [
             "assets/images/judy.jfif"

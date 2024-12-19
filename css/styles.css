@@ -37,3 +37,44 @@ section {
     object-fit: cover;
     display: block;
 }
+
+.gallery-container {
+    position: relative; /* Ensure positioning for the arrows */
+    display: flex;
+    align-items: center; /* Center arrows vertically */
+    justify-content: space-between; /* Place arrows on either side */
+    max-width: 800px; /* Set a max width for the gallery */
+    margin: 0 auto; /* Center the gallery container on the page */
+    height: 500px; /* Define the height of the gallery */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.image-wrapper {
+    flex-grow: 1; /* Expand to take up space between arrows */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    height: 100%; /* Match the height of the container */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.arrow {
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px 15px;
+    z-index: 10; /* Ensure arrows are on top of the image */
+}
+
+.left-arrow {
+    margin-left: 10px;
+}
+
+.right-arrow {
+    margin-right: 10px;
+}

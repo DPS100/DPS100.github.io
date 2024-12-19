@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <button class="arrow left-arrow" id="left">&#10094;</button>
+
+        <div class="image-wrapper">
+            <img id="current-image" src="assets/images/judy.jfif" alt="Project Image">
+        </div>
+
+        <button class="arrow right-arrow" id="right">&#10095;</button>
+
+        <!-- Indicator Bubbles -->
+        <div class="indicator-container" id="indicators">
+            <!-- Bubbles will be dynamically generated -->
+        </div>
+    </div>
+
+    <script type="module">
+        import { Gallery } from './js/utils.js';
+
+        const images = ["assets/images/judy.jfif", "assets/images/diego.jfif"];
+        const gallery = new Gallery(images, "current-image");
+        document.getElementById("right").addEventListener('click', () => {gallery.changeImage(1);})
+        document.getElementById("left").addEventListener('click', () => {gallery.changeImage(-1);})
+    </script>
+</body>
+</html>
