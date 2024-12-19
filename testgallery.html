@@ -11,7 +11,7 @@
         <button class="arrow left-arrow" id="left">&#10094;</button>
 
         <div class="image-wrapper">
-            <img id="current-image" src="assets/images/judy.jfif" alt="Project Image">
+            <img id="current-image" src="assets/images/judy.jfif" alt="Project Image" class="gallery-member-image">
         </div>
 
         <button class="arrow right-arrow" id="right">&#10095;</button>
@@ -23,7 +23,7 @@
     </div>
 
     <script type="module">
-        import { Gallery } from './js/utils.js';
+        import { Gallery } from './js/gallery.mjs';
 
         const images = ["assets/images/judy.jfif", "assets/images/diego.jfif"];
         const gallery = new Gallery(images, "current-image");
