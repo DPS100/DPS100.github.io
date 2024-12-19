@@ -11,7 +11,7 @@ export function loadHTML(elementId, filePath) {
             const container = typeof elementId === "string" ? document.getElementById(elementId) : elementId;
 
             // Insert the HTML content
-            container.innerHTML = data;
+            container.innerHTML += data;
 
             // Find and execute <script> tags in the loaded HTML
             const scripts = container.querySelectorAll('script');
@@ -61,9 +61,8 @@ export function populateProject(json, id) {
         }
     }
 
-    // populateDiv(clone, json, 'images', 'image-template', 'images')
-    populateDiv(clone, json, 'videos', 'video-template', 'videos')
-    populateDiv(clone, json, 'media', 'media-template', 'media')
+    // populateDiv(clone, json, 'videos', 'video-template', 'videos')
+    // populateDiv(clone, json, 'media', 'media-template', 'media')
     
     var link_div = clone.getElementsByClassName('links')[0]
     for(const link of json.metadata.links) {
@@ -79,10 +78,10 @@ export function populateProject(json, id) {
         link_div.appendChild(link_template);
     }
 
-    if(json.metadata.images.length > 0) {
+    if(json.metadata.images.length + json.metadata.media.length + json.metadata.videos.length > 0) {
         var galleryDiv = clone.getElementsByClassName("gallery-container")[0];
         loadHTML(galleryDiv, "html/gallery.html").then(() => {
-            populateGallery(json.metadata.images, galleryDiv)
+            populateGallery(json.metadata, galleryDiv)
         })
     }
 
@@ -101,12 +100,14 @@ function populateDiv(parent, json, div_name, template_name, metadata_target) {
     }
 }
 
-export function populateGallery(images, galleryDiv) {
+export function populateGallery(metadata, galleryDiv) {
     galleryDiv.style.display = "flex"; 
     const wrapper = galleryDiv.getElementsByClassName("image-wrapper")[0];
-    const image = wrapper.getElementsByClassName("gallery-member-image")[0];
-    // image.id = galleryDiv.id + "-image";
-    const gallery = new Gallery(images, image);
-    galleryDiv.getElementsByClassName("right-arrow")[0].addEventListener('click', () => {gallery.changeImage(1);})
-    galleryDiv.getElementsByClassName("left-arrow")[0].addEventListener('click', () => {gallery.changeImage(-1);})
+    Promise.all([
+        loadHTML(wrapper, "html/image.html"),
+        loadHTML(wrapper, "html/video.html"),
+        loadHTML(wrapper, "html/media.html")
+    ]).then(() => {
+        const gallery = new Gallery(metadata.images, metadata.videos, metadata.media, galleryDiv);
+    });
 }
