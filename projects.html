@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <script src="js/utils.js"></script>
-  <script>
+  <script type="module">
+    import {loadHTML, populateProject} from "./js/utils.mjs"
     loadHTML("bootstrap-placeholder", "html/bootstrap.html");
     loadHTML("navbar-placeholder", "html/navbar.html");
     loadHTML("project-placeholder", "html/project-template.html").then(() => {fetch('projects.json').then(response => {return response.json()}).then(data => {data.forEach(project => {populateProject(project, "project-template")})})})

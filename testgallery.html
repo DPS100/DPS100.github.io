@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <script src="js/utils.js"></script>
-    <script>
-        loadHTML("gallery-placeholder", "html/gallery.html")
+    <script type="module">
+        import { loadHTML, populateGallery } from './js/utils.mjs';
+
+        const images = ["assets/images/judy.jfif", "assets/images/diego.jfif"];
+        loadHTML("gallery-placeholder1", "html/gallery.html").then(() => {
+            populateGallery(images, "gallery-placeholder1")
+        })
+        loadHTML("gallery-placeholder2", "html/gallery.html").then(() => {
+            populateGallery(images, "gallery-placeholder2")
+        })
     </script>
-    <div id="gallery-placeholder" class="gallery-container"></div>
+    <div id="gallery-placeholder1" class="gallery-container"></div>
+    <div id="gallery-placeholder2" class="gallery-container"></div>
 </body>
 </html>

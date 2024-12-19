@@ -1,4 +1,6 @@
-function loadHTML(elementId, filePath) {
+import { Gallery } from './gallery.mjs';
+
+export function loadHTML(elementId, filePath) {
     return fetch(filePath)
         .then(response => {
             if (!response.ok) throw new Error(`Error loading ${filePath}`);
@@ -29,8 +31,8 @@ function loadHTML(elementId, filePath) {
         .catch(error => console.error("Error:", error));
 }
 
-function highlightCurrentPage() {
-    path = window.location.pathname;
+export function highlightCurrentPage() {
+    const path = window.location.pathname;
     switch (path) {
         case "/":
             document.getElementById("home-button").classList.add("active");
@@ -41,10 +43,9 @@ function highlightCurrentPage() {
         default:
             break;
     }
-    console.log(path)
 }
 
-function populateProject(json, id) {
+export function populateProject(json, id) {
     var element = document.getElementById(id)
     var clone = element.cloneNode(true)
     clone.style.display = "block"
@@ -64,10 +65,10 @@ function populateProject(json, id) {
     populateDiv(clone, json, 'media', 'media-template', 'media')
     
     var link_div = clone.getElementsByClassName('links')[0]
-    for(link of json.metadata.links) {
+    for(const link of json.metadata.links) {
         link_div.style.display = "block"
-        link_template = link_div.getElementsByClassName('link-template')[0].cloneNode(true);
-        link_a_template = link_template.getElementsByClassName('link-a-template')[0];
+        const link_template = link_div.getElementsByClassName('link-template')[0].cloneNode(true);
+        const link_a_template = link_template.getElementsByClassName('link-a-template')[0];
         link_a_template.class = "";
         link_a_template.href = link.link
         link_a_template.innerHTML = link.link
@@ -82,12 +83,22 @@ function populateProject(json, id) {
 
 function populateDiv(parent, json, div_name, template_name, metadata_target) {
     var div = parent.getElementsByClassName(div_name)[0]
-    for(content of json.metadata[metadata_target]) {
+    for(const content of json.metadata[metadata_target]) {
         div.style.display = "block"
-        template = div.getElementsByClassName(template_name)[0].cloneNode(true);
+        const template = div.getElementsByClassName(template_name)[0].cloneNode(true);
         template.class = ""
         template.style.display = "block"
         template.src=content
         div.appendChild(template);
     }
+}
+
+export function populateGallery(images, galleryId) {
+    const galleryDiv = document.getElementById(galleryId);
+    const wrapper = galleryDiv.getElementsByClassName("image-wrapper")[0];
+    const image = wrapper.getElementsByClassName("gallery-member-image")[0];
+    image.id = galleryDiv.id + "-image";
+    const gallery = new Gallery(images, image.id);
+    galleryDiv.getElementsByClassName("right-arrow")[0].addEventListener('click', () => {gallery.changeImage(1);})
+    galleryDiv.getElementsByClassName("left-arrow")[0].addEventListener('click', () => {gallery.changeImage(-1);})
 }
