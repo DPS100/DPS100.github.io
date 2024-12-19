@@ -48,18 +48,26 @@
         }
     },
     {
-        "title": "Stop Motion",
+        "title": "Stop Motion Armature",
         "date": "2024-01-15",
-        "description": "Short film for my high school Film as Literature class. I designed, iterated, and 3D printed a custom armature from scratch, prototyping different kinds of actuating joints, hands, and facial expressions. I also created a short interface with OpenCV to quickly capture frames and play videos taken from these frames to preview the armature's movement.",
+        "description": "Short film project for my high school Film as Literature class, where I chose to make a stop motion movie. I designed, iterated, and 3D printed a custom armature from scratch, prototyping different kinds of actuating joints, hands, and facial expressions. I also created a short interface with OpenCV to quickly capture frames and play videos taken from these frames to preview the armature's movement.",
         "role":"Creator",
         "metadata": {
-          "images": [],
-          "videos": ["https://www.youtube.com/embed/1XkwiTnlhTY"],
-          "media": [],
-          "links": [
+          "images": [
+
           ],
-          "categories": ["robotics"],
-          "relevance": 0.5
+          "videos": [
+            "https://www.youtube.com/embed/1XkwiTnlhTY"
+          ],
+          "media": [
+
+          ],
+          "links": [
+
+          ],
+          "categories": [
+            {"filter": "robotics", "relevance": 0.5}
+          ]
         }
     },
     {
@@ -74,8 +82,9 @@
           "links": [
             {"title": "Github", "link": "https://github.com/DPS100/DataSynthesizer"}
           ],
-          "categories": ["data-science-ml"],
-          "relevance": 0.5
+          "categories": [
+            {"filter": "data-science-ml", "relevance": 0.5}
+          ]
         }
     },
     {
@@ -90,8 +99,9 @@
           "links": [
             {"title": "Github", "link": "https://github.com/DPS100/3133-Turing-Final-Project"}
           ],
-          "categories": ["full-stack"],
-          "relevance": 0.5
+          "categories": [
+            {"filter": "full-stack", "relevance": 0.5}
+          ]
         }
     },
     {
@@ -105,8 +115,9 @@
           "media": ["assets/media/Lab4_RBE3002_Report (1).pdf"],
           "links": [
           ],
-          "categories": ["full-stack"],
-          "relevance": 0.5
+          "categories": [
+            {"filter": "robotics", "relevance": 0.5}
+          ]
         }
     },
     {
@@ -119,8 +130,9 @@
           "videos": ["https://www.youtube.com/embed/Q2C-VMDZcdc"],
           "media": ["assets/media/Lab5_Report_RBE3001A24_Team6_Zhang_Pena-Stein_Reese (2).pdf"],
           "links": [],
-          "categories": ["robotics"],
-          "relevance": 0.5
+          "categories": [
+            {"filter": "robotics", "relevance": 0.5}
+          ]
         }
     },
     {
