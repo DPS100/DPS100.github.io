@@ -18,7 +18,7 @@
             {"title": "Github", "link": "https://github.com/DPS100/DPS100.github.io"}
           ],
           "categories": [
-            {"filter": "full-stack", "relevance": 0.5}
+            {"filter": "software", "relevance": 0.5}
           ]
         }
     },
@@ -99,7 +99,7 @@
             {"title": "Github", "link": "https://github.com/DPS100/3133-Turing-Final-Project"}
           ],
           "categories": [
-            {"filter": "full-stack", "relevance": 0.1}
+            {"filter": "software", "relevance": 0.1}
           ]
         }
     },
@@ -156,7 +156,7 @@
           ],
           "categories": [
             {"filter": "robotics", "relevance": 0.9},
-            {"filter": "full-stack", "relevance": 0.3},
+            {"filter": "software", "relevance": 0.3},
             {"filter": "data-science-ml", "relevance": 0.4}
           ]
         }

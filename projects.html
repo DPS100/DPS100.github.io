@@ -21,15 +21,12 @@
           }
         })
         const filteredJson = json.filter(project => project.filterRelevance > 0);
-        var acc = 0
-        while(filteredJson.length != 0 && acc < 10) {
+        while(filteredJson.length != 0) {
           const largestIndex = filteredJson.reduce((acc, curr, idx) =>
           curr.filterRelevance > filteredJson[acc].filterRelevance ? idx : acc, 0);
           const project = filteredJson.splice(largestIndex, 1)[0];
           populateProject(project, "project-template");
-          acc++;
         }
-        console.log(acc); 
       })
     })
   </script>

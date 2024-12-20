@@ -19,7 +19,6 @@ export class Gallery {
         const right = div.getElementsByClassName("right-arrow")[0]
         const left = div.getElementsByClassName("left-arrow")[0]
         if(this.container.length == 1) {
-            console.log("ZEROOOOO")
             right.remove();
             left.style = "visibility: hidden";
             right.style = "visibility: hidden";
