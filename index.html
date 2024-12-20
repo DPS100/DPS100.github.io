@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <script src="js/utils.js"></script>
-    <script>
+    <script type="module">
+        import {loadHTML} from "./js/utils.mjs"
+
         loadHTML("bootstrap-placeholder", "html/bootstrap.html");
         loadHTML("navbar-placeholder", "html/navbar.html");
     </script>
