@@ -63,12 +63,10 @@ section {
 }
 
 .arrow {
-    /* background-color: rgba(255, 255, 255, 0.7); */
+    background-color: rgba(255, 255, 255, 0.7);
     border: none;
-    font-size: 2rem;
+    font-size: 1.4rem;
     cursor: pointer;
-    padding: 10px 15px;
-    z-index: 10; /* Ensure arrows are on top of the image */
 }
 
 .left-arrow {
@@ -77,4 +75,33 @@ section {
 
 .right-arrow {
     margin-right: 10px;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center; /* Center the dots */
+    align-items: center;
+    padding-top: 16px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center; /* Center the dots */
+    align-items: center;
+    gap: 10px; /* Space between dots */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dot {
+    width: 20px;          /* Size of the dots */
+    height: 20px;         /* Size of the dots */
+    border-radius: 50%;   /* Make them circular */
+    background-color: #ccc; /* Default color */
+    cursor: pointer;      /* Optional: Makes dots clickable */
+}
+
+.dot.current {
+    background-color: #007bff; /* Highlighted color for the current index */
+    border: 5px solid #ccc;    /* Optional: Add a border to emphasize */
 }

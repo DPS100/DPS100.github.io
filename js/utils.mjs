@@ -78,9 +78,7 @@ export function populateProject(json, id) {
 
     if(json.metadata.images.length + json.metadata.media.length + json.metadata.videos.length > 0) {
         var galleryDiv = clone.getElementsByClassName("gallery-container")[0];
-        loadHTML(galleryDiv, "html/gallery.html").then(() => {
-            populateGallery(json.metadata, galleryDiv)
-        })
+        populateGallery(json.metadata, galleryDiv);
     }
 
     element.parentElement.appendChild(clone)
