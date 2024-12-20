@@ -49,7 +49,7 @@
     {
         "title": "Stop Motion Armature",
         "date": "2024-01-15",
-        "description": "Short film project for my high school Film as Literature class, where I chose to make a stop motion movie. I designed, iterated, and 3D printed a custom armature from scratch, prototyping different kinds of actuating joints, hands, and facial expressions. I also created a short interface with OpenCV to quickly capture frames and play videos taken from these frames to preview the armature's movement.",
+        "description": "Short film project for my high school Film as Literature class, where I chose to make a stop motion movie. I designed, iterated, and 3D printed a custom armature from scratch, prototyping different kinds of actuating joints, hands, and facial expressions. I also created a basic interface with OpenCV to quickly capture frames and play videos taken from these frames to preview the armature's movement.",
         "role":"Creator",
         "metadata": {
           "images": [

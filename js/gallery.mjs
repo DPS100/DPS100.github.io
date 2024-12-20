@@ -1,6 +1,5 @@
 export class Gallery {
     constructor(images, videos, media, div) {
-        // TODO disable switching and hide arrows with only one member
         this.container = [];
         for(const image of images) {
             this.container.push(new DisplayType(image, "image"));
@@ -17,8 +16,17 @@ export class Gallery {
         this.video = wrapper.getElementsByClassName("video-template")[0];
         this.media = wrapper.getElementsByClassName("media-template")[0];
         this.changeImage(0);
-        div.getElementsByClassName("right-arrow")[0].addEventListener('click', () => {this.changeImage(1);})
-        div.getElementsByClassName("left-arrow")[0].addEventListener('click', () => {this.changeImage(-1);})
+        const right = div.getElementsByClassName("right-arrow")[0]
+        const left = div.getElementsByClassName("left-arrow")[0]
+        if(this.container.length == 1) {
+            console.log("ZEROOOOO")
+            right.remove();
+            left.style = "visibility: hidden";
+            right.style = "visibility: hidden";
+        } else {
+            right.addEventListener('click', () => {this.changeImage(1);})
+            left.addEventListener('click', () => {this.changeImage(-1);})
+        }
     }
 
     changeImage(direction) {
