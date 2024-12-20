@@ -19,9 +19,10 @@ export class Gallery {
         this.setImageIndex(0);
         const right = div.parentElement.getElementsByClassName("right-arrow")[0]
         const left = div.parentElement.getElementsByClassName("left-arrow")[0]
-        if(this.container.length == 1) {
-            div.parentElement.getElementsByClassName("dots-container")[0].style = "display: none;"
+        if(this.container.length <= 1) {
+            // div.parentElement.getElementsByClassName("dots-container")[0].style = "display: none;"
         } else {
+            div.parentElement.getElementsByClassName("dots-container")[0].style = "display: flex;"
             right.addEventListener('click', () => {this.changeImage(1);})
             left.addEventListener('click', () => {this.changeImage(-1);})
             for (var i = 0; i < this.container.length - 2; i++){

@@ -82,14 +82,15 @@
             {"title": "Github", "link": "https://github.com/DPS100/DataSynthesizer"}
           ],
           "categories": [
-            {"filter": "data-science-ml", "relevance": 0.95}
+            {"filter": "data-science-ml", "relevance": 0.95},
+            {"filter": "software", "relevance": 0.2}
           ]
         }
     },
     {
         "title": "Turing Machine Simulation",
         "date": "2024-01-15",
-        "description": "Final project for my Foundations of Computer Science class. This project consisted of two parts: Creating a simulation of a turing machine, and designing a turing machine that could recognize if a string is a subsequence of another string. The turing machine simulator allows a user to provide a configuration file that defines the alphabet and state machine (essentially an instruction set for how the turing machine will run). See the readme file in the project github for a more detailed description of the program.",
+        "description": "Final project for my Foundations of Computer Science class. This project consisted of two parts: Creating a simulation of a turing machine, and designing a turing machine that could recognize if a string is a subsequence of another string. The turing machine simulator allows a user to provide a configuration file that defines the alphabet and state machine (essentially an instruction set for how the turing machine will run, defining what action to take and state to transition for each character read). See the readme file in the project github for a more detailed description of the program.",
         "role":"Creator",
         "metadata": {
           "images": [],
@@ -115,7 +116,8 @@
           "links": [
           ],
           "categories": [
-            {"filter": "robotics", "relevance": 0.85}
+            {"filter": "robotics", "relevance": 0.85},
+            {"filter": "software", "relevance": 0.45}
           ]
         }
     },
@@ -130,7 +132,8 @@
           "media": ["assets/media/Lab5_Report_RBE3001.pdf"],
           "links": [],
           "categories": [
-            {"filter": "robotics", "relevance": 0.95}
+            {"filter": "robotics", "relevance": 0.95},
+            {"filter": "software", "relevance": 0.4}
           ]
         }
     },
@@ -156,7 +159,7 @@
           ],
           "categories": [
             {"filter": "robotics", "relevance": 0.9},
-            {"filter": "software", "relevance": 0.3},
+            {"filter": "software", "relevance": 0.5},
             {"filter": "data-science-ml", "relevance": 0.4}
           ]
         }
