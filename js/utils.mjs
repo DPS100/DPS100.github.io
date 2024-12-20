@@ -47,6 +47,7 @@ export function highlightCurrentPage() {
 }
 
 export function populateProject(json, id) {
+
     var element = document.getElementById(id)
     var clone = element.cloneNode(true)
     clone.style.display = "block"
@@ -60,9 +61,6 @@ export function populateProject(json, id) {
             }
         }
     }
-
-    // populateDiv(clone, json, 'videos', 'video-template', 'videos')
-    // populateDiv(clone, json, 'media', 'media-template', 'media')
     
     var link_div = clone.getElementsByClassName('links')[0]
     for(const link of json.metadata.links) {
@@ -88,18 +86,6 @@ export function populateProject(json, id) {
     element.parentElement.appendChild(clone)
 }
 
-function populateDiv(parent, json, div_name, template_name, metadata_target) {
-    var div = parent.getElementsByClassName(div_name)[0]
-    for(const content of json.metadata[metadata_target]) {
-        div.style.display = "block"
-        const template = div.getElementsByClassName(template_name)[0].cloneNode(true);
-        template.class = ""
-        template.style.display = "block"
-        template.src=content
-        div.appendChild(template);
-    }
-}
-
 export function populateGallery(metadata, galleryDiv) {
     galleryDiv.style.display = "flex"; 
     const wrapper = galleryDiv.getElementsByClassName("image-wrapper")[0];
@@ -108,6 +94,6 @@ export function populateGallery(metadata, galleryDiv) {
         loadHTML(wrapper, "html/video.html"),
         loadHTML(wrapper, "html/media.html")
     ]).then(() => {
-        const gallery = new Gallery(metadata.images, metadata.videos, metadata.media, galleryDiv);
+        new Gallery(metadata.images, metadata.videos, metadata.media, galleryDiv);
     });
 }

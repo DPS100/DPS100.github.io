@@ -26,7 +26,6 @@ export class Gallery {
         if(this.index < 0) {
             this.index = this.container.length - 1;
         }
-        console.log(this.container.length);
         this.index %= this.container.length;
         const toDisplay = this.container[this.index];
         this.image.style.display = "none";

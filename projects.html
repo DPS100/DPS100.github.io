@@ -8,7 +8,30 @@
     import {loadHTML, populateProject} from "./js/utils.mjs"
     loadHTML("bootstrap-placeholder", "html/bootstrap.html");
     loadHTML("navbar-placeholder", "html/navbar.html");
-    loadHTML("project-placeholder", "html/project-template.html").then(() => {fetch('projects.json').then(response => {return response.json()}).then(data => {data.forEach(project => {populateProject(project, "project-template")})})})
+    const urlParams = new URLSearchParams(window.location.search);
+    const filter = urlParams.get('filter');
+    loadHTML("project-placeholder", "html/project-template.html").then(() => {
+      fetch('projects.json').then(response => {
+        return response.json()
+      }).then(json => {
+        json.forEach(project => {
+          project.filterRelevance = 0;
+          for (const filterObject of project.metadata.categories) {
+            if(filterObject.filter == filter || filter == null) project.filterRelevance += filterObject.relevance;
+          }
+        })
+        const filteredJson = json.filter(project => project.filterRelevance > 0);
+        var acc = 0
+        while(filteredJson.length != 0 && acc < 10) {
+          const largestIndex = filteredJson.reduce((acc, curr, idx) =>
+          curr.filterRelevance > filteredJson[acc].filterRelevance ? idx : acc, 0);
+          const project = filteredJson.splice(largestIndex, 1)[0];
+          populateProject(project, "project-template");
+          acc++;
+        }
+        console.log(acc); 
+      })
+    })
   </script>
   <div id="navbar-placeholder"></div>
   <div id="project-placeholder" class="container"></div>
