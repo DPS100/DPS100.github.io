@@ -1,36 +1,48 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-      <img src="assets\images\diego.jfif" width="50" height="50" alt="" class="icon">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li id="home-button" class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          </li>
-          <li id="projects-button" class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Projects
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="projects">All</a>
-              <a class="dropdown-item" href="projects?filter=full-stack">Full Stack</a>
-              <a class="dropdown-item" href="projects?filter=data-science-ml">Data Science & Machine Learning</a>
-              <a class="dropdown-item" href="projects?filter=robotics">Robotics</a>
-            </div>
-          </li>
-        </ul>
+    <div class="container-fluid d-flex">
+      <div class="d-flex me-auto">
+
+        <a class="navbar-brand" href="#">
+          <img src="assets\images\diego.jfif" width="50" height="50" alt="" class="icon">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li id="home-button" class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              </li>
+              <li id="projects-button" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="projects">All</a>
+                  <a class="dropdown-item" href="projects?filter=full-stack">Full Stack</a>
+                  <a class="dropdown-item" href="projects?filter=data-science-ml">Data Science & Machine Learning</a>
+                  <a class="dropdown-item" href="projects?filter=robotics">Robotics</a>
+                </div>
+              </li>
+            </ul>
+          </div>
       </div>
-    <a class="navbar-brand" href="https://github.com/DPS100">
-      <img src="assets/images/github-mark-white.png" width="50" height="50" alt="" class="icon">
-    </a>
-    <a class="navbar-brand" href="https://www.linkedin.com/in/diego-pena-stein-818648258/">
-      <img src="assets/images/LI-In-Bug.png" height="50" alt="" class="icon">
-    </a>
-    <script>
-      highlightCurrentPage();
-    </script>
+      <div class="d-flex mx-auto">
+        <h1>
+          Diego Pena-Stein
+        </h1>
+      </div>
+      <div class="d-flex ms-auto">
+        <a class="navbar-brand" href="https://github.com/DPS100">
+          <img src="assets/images/github-mark-white.png" width="50" height="50" alt="" class="icon">
+        </a>
+        <a class="navbar-brand" href="https://www.linkedin.com/in/diego-pena-stein-818648258/">
+          <img src="assets/images/LI-In-Bug.png" height="50" alt="" class="icon">
+        </a>
+      </div>
+    </div>
 </nav>
+<script>
+  highlightCurrentPage();
+</script>
