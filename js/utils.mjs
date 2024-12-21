@@ -81,7 +81,16 @@ export function populateProject(json, id) {
         populateGallery(json.metadata, galleryDiv);
     }
 
-    element.parentElement.appendChild(clone)
+    element.parentElement.appendChild(clone);
+
+    const sidebar = document.getElementById("sidebar").getElementsByClassName("navbar-nav")[0];
+    console.log(sidebar)
+    const sidebarListItemClone = sidebar.getElementsByClassName("sidebar-list-element")[0].cloneNode(true);
+    sidebarListItemClone.style.display = "block";
+    const sidebarQuicklink = sidebarListItemClone.getElementsByClassName("sidebar-quicklink")[0];
+    sidebarQuicklink.href=`#${clone.id}`
+    sidebarQuicklink.innerHTML = json.title;
+    sidebar.appendChild(sidebarListItemClone)
 }
 
 export function populateGallery(metadata, galleryDiv) {

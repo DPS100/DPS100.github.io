@@ -102,3 +102,13 @@ section {
     background-color: #007bff; /* Highlighted color for the current index */
     border: 5px solid #ccc;    /* Optional: Add a border to emphasize */
 }
+
+.sidebar {
+/* Sticky index OUTSIDE the wrapper */
+    position: sticky;
+    top: 0; /* Sticky starting point */
+    background-color: slategray;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    width: 10%; /* Fixed width for  the index */
+}
