@@ -84,7 +84,6 @@ export function populateProject(json, id) {
     element.parentElement.appendChild(clone);
 
     const sidebar = document.getElementById("sidebar").getElementsByClassName("navbar-nav")[0];
-    console.log(sidebar)
     const sidebarListItemClone = sidebar.getElementsByClassName("sidebar-list-element")[0].cloneNode(true);
     sidebarListItemClone.style.display = "block";
     const sidebarQuicklink = sidebarListItemClone.getElementsByClassName("sidebar-quicklink")[0];

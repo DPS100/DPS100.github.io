@@ -28,7 +28,6 @@ export class Gallery {
             for (var i = 0; i < this.container.length - 2; i++){
                 const cloned_dot = this.div.parentElement.getElementsByClassName("dot")[1].cloneNode();
                 this.div.parentElement.getElementsByClassName("dots")[0].appendChild(cloned_dot);
-                console.log(this.div.parentElement.getElementsByClassName("dots"));
             }
             for(let i = 0; i < this.container.length; i++) {
                 const dot = this.div.parentElement.getElementsByClassName("dot")[i];
@@ -42,7 +41,6 @@ export class Gallery {
     } 
 
     setImageIndex(index) {
-        console.log(`Switching to index ${index}`)
         this.index = index;
         if(this.index < 0) {
             this.index = this.container.length - 1;
