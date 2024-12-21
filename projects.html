@@ -6,8 +6,8 @@
 <body>
   <script type="module">
     import {loadHTML, populateProject} from "./js/utils.mjs"
-    loadHTML("bootstrap-placeholder", "html/bootstrap.html");
-    loadHTML("navbar-placeholder", "html/navbar.html");
+    loadHTML("bootstrap-placeholder", "html/bootstrap.html").then(() => loadHTML("navbar-placeholder", "html/navbar.html"));
+
     const urlParams = new URLSearchParams(window.location.search);
     const filter = urlParams.get('filter');
     loadHTML("project-placeholder", "html/project-template.html").then(() => {
