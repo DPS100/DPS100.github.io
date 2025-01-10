@@ -83,7 +83,6 @@ export function populateProject(json, id) {
     for(const skill of json.metadata.skills) {
         skills_template.innerHTML += `${skill}, `
     }
-    console.log(skills_template.innerHTML);
     skills_template.style.display = "block";
     skills_template.innerHTML = skills_template.innerHTML.substring(0, skills_template.innerHTML.length - 2);
     skills_div.appendChild(skills_template);

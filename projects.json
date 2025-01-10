@@ -1,11 +1,11 @@
 [
     {
         "title": "Portfolio Site",
-        "date": "2024-01-15",
         "goal": "Create and self-host a portfolio site.",
         "description": "A custom and easily configurable portfolio built with Javascript, HTML, and CSS. I can easily incorporate a new project simply by updating a few lines in the projects.json manifest!",
         "role":"Creator",
         "metadata": {
+          "date": "2024-01-15",
           "images": [
 
           ],
@@ -31,11 +31,11 @@
     },
     {
         "title": "Whirly Tunes",
-        "date": "2024-01-15",
         "goal": "Explore pitch possibilities, types of form and development, and capabilities unique to musical machines machines.",
         "description": "A robotic ensemble of colorful modules that produce a voice-like musical tone. I contributed to the research, prototyping, assembly, DAW communication, and creating a musical score to interface with the robot. This was my humanities final practicum in Musical Robotics, where students were tasked with creating musical robots and complimentary scores in order to explore pitch possibilities, types of form and development, and capabilities unique to machines.",
         "role":"Contributor",
         "metadata": {
+          "date": "2024-01-15",
           "images": [
             "assets/images/whirly-tunes.jpg"
           ],
@@ -61,11 +61,11 @@
     },
     {
         "title": "Stop Motion Armature",
-        "date": "2024-01-15",
         "goal": "Create an expressive figure for a stop motion film.",
         "description": "Short film project for my high school Film as Literature class, where I created a stop motion movie. I designed, iterated, and 3D printed a custom armature from scratch, prototyping different kinds of actuating joints, hands, and facial expressions in a CAD program (Onshape). I also created a basic interface with OpenCV to quickly capture frames and play videos taken from these frames to preview the armature's movement.",
         "role":"Creator",
         "metadata": {
+          "date": "2024-01-15",
           "images": [
 
           ],
@@ -89,11 +89,11 @@
     },
     {
         "title": "Data Synthesizer",
-        "date": "2024-01-15",
         "goal": "Create a self-taught AI that can synthesize data based on class labels.",
         "description": "Final project for my graduate Machine Learning class. The goal was to train a supervised image classifier without any manually classified images by using another generative model to build the training dataset. The program will effectively dream by training itself on what it believes an image will look like. Our team created a robust and fault-tolerant synthetic data pipeline to sequentially generate images according to each class label. This was done in order to generate images in parallel across multiple machines without losing progress if one failed. Roughly 4,400 images were generated with stable diffusion over the span of a few days. PyTorch was used to train convolutional neural networks that performed with an accuracy of 90% on testing and validation sets they had never seen real data for. This could also be used to enhance existing datasets, where a model could be pre-trained on synthetic data to learn important features and later fine-tuned on real data.",
         "role":"Team lead",
         "metadata": {
+          "date": "2024-01-15",
           "images": [],
           "videos": [],
           "media": ["https://docs.google.com/presentation/d/e/2PACX-1vRED2ZWsUFcxnkx_TggazQzzxoHYn2Ir4EPJD5a2891_L3uKNd2oMGYfmbxnZTrtQ/embed?start=false&loop=true&delayms=3000"],
@@ -118,11 +118,11 @@
     },
     {
         "title": "Turing Machine",
-        "date": "2024-01-15",
         "goal": "Design and simulate a turing machine to accept string subseqeunces.",
         "description": "Final project for my Foundations of Computer Science class. This project consisted of two parts: creating a simulator for arbitrary turing machines, and designing a turing machine that could recognize if a string is a subsequence of another string. The turing machine simulator is written in C++ and allows a user to provide a configuration file that defines the alphabet and state machine (essentially an instruction set for how the turing machine will run, defining what action to take and state to transition for each character read). See the readme file in the project github for a more detailed description of the program.",
         "role":"Creator",
         "metadata": {
+          "date": "2024-01-15",
           "images": [],
           "videos": [],
           "media": ["https://docs.google.com/presentation/d/e/2PACX-1vSlFCX9cupE4Ocpwg-h5iZdirlppeZMHfgUF3tQu0SgepLnA4FLGahaHRguWaOoqA/embed?start=false&loop=true&delayms=3000"],
@@ -140,11 +140,11 @@
     },
     {
         "title": "Autonomous Maze Navigation",
-        "date": "2024-01-15",
         "goal": "Program a robot to autonomously explore and navigate in an unknown environment.",
         "description": "The cumulative final project for my Unified Robotics IV: Navigation class to showcase our understanding of robot self localization and mapping (SLAM). The final demo consisted of three parts: Mapping out an unknown maze, returning to the start position, and returning to the start position once again after being relocated to some random position in the maze at a random time. The robot itself is a turtlebot 3 burger running ROS, mapping it's immediate surroundings using a LIDAR sensor. It would report readings back to a host computer over ROS topics, which would estimate the position of the robot to the maze walls using a Kalman filter according to the internal wheel odometry and external wall positions. OpenCV was used to compute unexplored frontiers to investigate. An A* algorithm with a heuristic was used to determine the best frontier and how to navigate to it, and a cubic spline was provided for the turtlebot to follow. When the turtlebot detected it had been disturbed, it used Monte Carlo localization to find where it was in the maze, and return to the starting position.",
         "role":"Contributor",
         "metadata": {
+          "date": "2024-01-15",
           "images": [],
           "videos": [],
           "media": ["assets/media/Lab4_RBE3002_Report (1).pdf"],
@@ -169,11 +169,11 @@
     },
     {
         "title": "Robotic Pick and Place",
-        "date": "2024-01-15",
         "goal": "Program a robotic arm to identify and manipulate different types of objects inside the workspace.",
         "description": "The cumulative final project for my Unified Robotics III: Manipulation class. The demo entailed detecting objects of interest, determining their position in the workspace, and controlling the robotic arm to sort them into their respective bins. Both the controls for the OpenManipulator-X arm and vision processing pipeline were built using MATLAB. The arm consisted of four servos that could control position and velocity. The dimensions of the arm linkages and position of the servos could be used to derive the position of the arm in space with forward kinematics. Once the position of an object of interest was identified, inverse kinematics was to determine the configuration of the arm to manipulate the target. In order to reach the target, we calculated the Jacobian of the end effector, which could be used to translate between the robot joint space and the working space. Using cubic trajectory interpolation and the Jacobian, the robot can generate a smooth control signal to manipulate the target objects.",
         "role":"Contributor",
         "metadata": {
+          "date": "2024-01-15",
           "images": [],
           "videos": ["https://www.youtube.com/embed/Q2C-VMDZcdc"],
           "media": ["assets/media/Lab5_Report_RBE3001.pdf"],
@@ -195,11 +195,11 @@
     },
     {
         "title": "FRC: Jazzy Judi",
-        "date": "2024-01-15",
         "goal": "Create a competitive robot for the 2022 First Robotics Competetion by implementing and automating robotic subsystems.",
         "description": "Jazzy Judi was the robot built by my high school robotics team for the 2022 FIRST Robotics Competition (FRC) game Rapid React. My duties to the team included distributing work to other programmers, teaching new members, and communicating with other sub-teams what was in progress or needed to be done. I was also the operator during competitions, diagnosing problems and modifying the code on the fly according to the demands of the current match. The technical solutions I implemented for the robot ranged from game piece tracking using OpenCV and GRIP, automation of subsystems to keep the driver focused on the game, and creation of one of the best autonomous routines in the state. Here's some background on the competition to help put my contributions into context. The 2022 Rapid React First Robotics Competition consisted of two alliances of three robots from individual teams, each trying to score more points than the other. Points were scored by shooting game pieces, essentially basketball sized tennis balls, into a funnel at the center of the field. Additional bonus points could be scored by climbing a set of rungs at the end of the match, or scoring balls autonomously in the first 15 seconds. Most of the programming I did was with the goal of the driver's life easier: automatically moving towards balls, deploying the ball intake, moving the balls internally to the correct position, discarding the opposing team's balls, prepping the flywheels to take a shot, and calibrating the climbing sequence to move as quickly and safely up the rungs as possible. The task I am the most proud of is the four ball autonomous routine, where the robot collected and scored four game pieces in the first 15 seconds of the game. This was a huge factor in our success winning the Colorado regional and ranking 7th in our division of the international championship.",
         "role":"Lead Programmer",
         "metadata": {
+          "date": "2024-01-15",
           "images": [
             "assets/images/judy.jfif"
           ],
