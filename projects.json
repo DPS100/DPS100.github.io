@@ -18,6 +18,12 @@
           "links": [
             {"title": "Github", "link": "https://github.com/DPS100/DPS100.github.io"}
           ],
+          "skills": [
+            "Javascript",
+            "HTML",
+            "CSS",
+            "Front-End Development"
+          ],
           "categories": [
             {"filter": "software", "relevance": 0.5}
           ]
@@ -43,6 +49,11 @@
             {"title": "Read more", "link": "https://wp.wpi.edu/musicalmachines/2023/12/17/whirly-tunes/"},
             {"title": "Github", "link": "https://github.com/Kreeevin/WhirlyBoi"}
           ],
+          "skills": [
+            "Python",
+            "CAD",
+            "Embedded Systems"
+          ],
           "categories": [
             {"filter": "robotics", "relevance": 0.2}
           ]
@@ -52,7 +63,7 @@
         "title": "Stop Motion Armature",
         "date": "2024-01-15",
         "goal": "Create an expressive figure for a stop motion film.",
-        "description": "Short film project for my high school Film as Literature class, where I created a stop motion movie. I designed, iterated, and 3D printed a custom armature from scratch, prototyping different kinds of actuating joints, hands, and facial expressions. I also created a basic interface with OpenCV to quickly capture frames and play videos taken from these frames to preview the armature's movement.",
+        "description": "Short film project for my high school Film as Literature class, where I created a stop motion movie. I designed, iterated, and 3D printed a custom armature from scratch, prototyping different kinds of actuating joints, hands, and facial expressions in a CAD program (Onshape). I also created a basic interface with OpenCV to quickly capture frames and play videos taken from these frames to preview the armature's movement.",
         "role":"Creator",
         "metadata": {
           "images": [
@@ -66,6 +77,10 @@
           ],
           "links": [
 
+          ],
+          "skills": [
+            "CAD",
+            "3D printing"
           ],
           "categories": [
             {"filter": "robotics", "relevance": 0.1}
@@ -84,6 +99,16 @@
           "media": ["https://docs.google.com/presentation/d/e/2PACX-1vRED2ZWsUFcxnkx_TggazQzzxoHYn2Ir4EPJD5a2891_L3uKNd2oMGYfmbxnZTrtQ/embed?start=false&loop=true&delayms=3000"],
           "links": [
             {"title": "Github", "link": "https://github.com/DPS100/DataSynthesizer"}
+          ],
+          "skills": [
+            "Leadership",
+            "Python",
+            "PyTorch",
+            "Machine Learning",
+            "Data Pipelining",
+            "Data Cleaning",
+            "Image Processing",
+            "Back-End Development"
           ],
           "categories": [
             {"filter": "data-science-ml", "relevance": 1.0},
@@ -104,6 +129,10 @@
           "links": [
             {"title": "Github", "link": "https://github.com/DPS100/3133-Turing-Final-Project"}
           ],
+          "skills": [
+            "C++",
+            "Algorithms"
+          ],
           "categories": [
             {"filter": "software", "relevance": 0.1}
           ]
@@ -120,6 +149,17 @@
           "videos": [],
           "media": ["assets/media/Lab4_RBE3002_Report (1).pdf"],
           "links": [
+          ],
+          "skills": [
+            "Teamwork",
+            "Python",
+            "ROS",
+            "Linux",
+            "Robot Navigation",
+            "Trajectory Planning",
+            "Image Processing",
+            "Distributed and Edge Systems",
+            "Event-Driven Systems"
           ],
           "categories": [
             {"filter": "robotics", "relevance": 0.65},
@@ -138,6 +178,15 @@
           "videos": ["https://www.youtube.com/embed/Q2C-VMDZcdc"],
           "media": ["assets/media/Lab5_Report_RBE3001.pdf"],
           "links": [],
+          "skills": [
+            "Teamwork",
+            "MATLAB",
+            "Control Theory",
+            "Image Processing",
+            "Robot Kinematics",
+            "Motion Planning",
+            "Embedded Systems"
+          ],
           "categories": [
             {"filter": "robotics", "relevance": 0.85},
             {"filter": "software", "relevance": 0.4}
@@ -164,6 +213,19 @@
           "links": [
             {"title": "Angelbotics Website", "link": "https://angelbotics.org"},
             {"title": "Github", "link": "https://github.com/Angelbots1339/2022_Competition_Season"}
+          ],
+          "skills": [
+            "Leadership",
+            "Teamwork",
+            "Java",
+            "Event-Driven Systems",
+            "Embedded Systems",
+            "Image Processing",
+            "Robot Kinematics",
+            "Robot Navigation",
+            "Control Theory",
+            "Motion Planning",
+            "Trajectory Planning"
           ],
           "categories": [
             {"filter": "robotics", "relevance": 0.9},
