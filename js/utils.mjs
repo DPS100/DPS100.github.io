@@ -34,6 +34,7 @@ export function loadHTML(elementId, filePath) {
 
 export function highlightCurrentPage() {
     const path = window.location.pathname;
+    const hash = window.location.hash;
     switch (path) {
         case "/":
             document.getElementById("home-button").classList.add("active");

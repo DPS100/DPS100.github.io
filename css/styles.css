@@ -112,3 +112,7 @@ section {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     width: 10%; /* Fixed width for  the index */
 }
+
+.nav-link {
+    font-size: 1.15rem;
+}
