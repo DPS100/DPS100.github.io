@@ -106,11 +106,16 @@ section {
 .sidebar {
 /* Sticky index OUTSIDE the wrapper */
     position: sticky;
-    top: 0; /* Sticky starting point */
+    top: 10px; /* Sticky starting point */
     background-color: slategray;
     padding: 10px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    width: 10%; /* Fixed width for  the index */
+    width: calc(10% + 32px - 20px); /* Fixed width for  the index */
+    border-radius: .25rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .nav-link {

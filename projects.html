@@ -79,9 +79,10 @@
 
         // Measure the index height
         const sidebarHeight = sidebar.offsetHeight;
+        const wrapperMargin = window.getComputedStyle(wrapper).paddingTop;
 
         // Dynamically adjust the wrapper's margin-top
-        wrapper.style.marginTop = `-${sidebarHeight}px`; // Pull up by index height
+        wrapper.style.marginTop = `calc(-${sidebarHeight}px - ${wrapperMargin})`; // Pull up by index height
     }
 
     // Adjust position on load and resize
