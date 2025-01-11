@@ -101,6 +101,18 @@ export function populateProject(json, id) {
     sidebarQuicklink.href=`#${clone.id}`
     sidebarQuicklink.innerHTML = json.title;
     sidebar.appendChild(sidebarListItemClone)
+
+    // Scroll to hash after section loads
+    const hash = decodeURIComponent(window.location.hash).substring(1);
+
+    if (clone.id.normalize() == hash.normalize()) {
+        const title = clone.getElementsByClassName("title")[0];
+        title.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "nearest"
+        });
+    }
 }
 
 export function populateGallery(metadata, galleryDiv) {
