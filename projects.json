@@ -255,8 +255,10 @@
             {"filter": "robotics", "relevance": 0.3},
             {"filter": "software", "relevance": 1.0},
             {"filter": "data-science-ml", "relevance": 0.2}
-          ], "skills": [
-            "Leadership"
+          ]
+          , "skills": [
+            "Leadership",
+            "Back-End Development"
           ]
         }
     }
