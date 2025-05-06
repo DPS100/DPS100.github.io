@@ -234,32 +234,41 @@
         }
     },
     {
-        "title": "Smarter Learning Environments",
+      "title": "Smarter Learning Environments",
+      "goal": "WPI Interactive Qualifying Project",
+      "description": "Environmental conditions in classrooms play a critical role in shaping students' health, cognitive function, and academic performance. A novel environmental data collection/analysis system was developed and deployed to take detailed samples and provide informative visuals of temperature, humidity, air quality, noise, and lighting. Perceptions of environmental factors were evaluated through outreach surveys and one-on-one interviews. Recommendations were proposed to the Universidad de Cádiz to help address deficiencies found in ambient classroom conditions and promote student well-being and learning.",
+      "role":"Co-Author",
+      "metadata": {
         "date": "2025-05-06",
-        "description": "Environmental conditions in classrooms play a critical role in shaping students' health, cognitive function, and academic performance. A novel environmental data collection/analysis system was developed and deployed to take detailed samples and provide informative visuals of temperature, humidity, air quality, noise, and lighting. Perceptions of environmental factors were evaluated through outreach surveys and one-on-one interviews. Recommendations were proposed to the Universidad de Cádiz to help address deficiencies found in ambient classroom conditions and promote student well-being and learning.",
-        "role":"Co-Author",
-        "metadata": {
-          "images": [
-            
-          ],
-          "videos": [
-            
-          ],
-          "media": [
-            "assets/media/Smarter Learning Environments Final Report.pdf"
-          ],
-          "links": [
-            {"title": "Github", "link": "https://github.com/Smarter-Learning-Environments"}
-          ],
-          "categories": [
+        "images": [
+
+        ],
+        "videos": [
+
+        ],
+        "media": [
+          "assets/media/Smarter Learning Environments Final Report.pdf"
+        ],
+        "links": [
+          {"title": "Github", "link": "https://github.com/Smarter-Learning-Environments"}
+        ],
+        "skills": [
+          "Leadership",
+          "Teamwork",
+          "C++",
+          "Embedded Systems",
+          "Back-End Development",
+          "Distributed and Edge Systems",
+          "CAD",
+          "Python",
+          "Linux",
+          "Data Pipelining"
+        ],
+        "categories": [
             {"filter": "robotics", "relevance": 0.3},
             {"filter": "software", "relevance": 1.0},
             {"filter": "data-science-ml", "relevance": 0.2}
-          ]
-          , "skills": [
-            "Leadership",
-            "Back-End Development"
-          ]
-        }
+        ]
+      }
     }
 ]
