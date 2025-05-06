@@ -34,6 +34,7 @@ export function loadHTML(elementId, filePath) {
 
 export function highlightCurrentPage() {
     const path = window.location.pathname;
+    const hash = window.location.hash;
     switch (path) {
         case "/":
             document.getElementById("home-button").classList.add("active");
@@ -76,6 +77,16 @@ export function populateProject(json, id) {
         link_div.appendChild(link_template);
     }
 
+    var skills_div = clone.getElementsByClassName('skills-div')[0];
+    var skills_template = skills_div.getElementsByClassName('skills')[0].cloneNode(true);
+    skills_template.innerHTML = "";    
+    for(const skill of json.metadata.skills) {
+        skills_template.innerHTML += `${skill}, `
+    }
+    skills_template.style.display = "block";
+    skills_template.innerHTML = skills_template.innerHTML.substring(0, skills_template.innerHTML.length - 2);
+    skills_div.appendChild(skills_template);
+
     if(json.metadata.images.length + json.metadata.media.length + json.metadata.videos.length > 0) {
         var galleryDiv = clone.getElementsByClassName("gallery-container")[0];
         populateGallery(json.metadata, galleryDiv);
@@ -90,6 +101,18 @@ export function populateProject(json, id) {
     sidebarQuicklink.href=`#${clone.id}`
     sidebarQuicklink.innerHTML = json.title;
     sidebar.appendChild(sidebarListItemClone)
+
+    // Scroll to hash after section loads
+    const hash = decodeURIComponent(window.location.hash).substring(1);
+
+    if (clone.id.normalize() == hash.normalize()) {
+        const title = clone.getElementsByClassName("title")[0];
+        title.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "nearest"
+        });
+    }
 }
 
 export function populateGallery(metadata, galleryDiv) {
