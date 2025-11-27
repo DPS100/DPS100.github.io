@@ -234,6 +234,45 @@
         }
     },
     {
+        "title": "Robotic Surgical Laser",
+        "goal": "WPI Major Qualifying Project",
+        "description": "Lasers are widely used in surgery to perform precise tissue cutting and incisions. The goal of this project is to create an application for an iPad (or other tablet) that allows precise control of a surgical laser using a stylus, such as the Apple Pencil. The idea is to enable surgeons to control the laser as if they were writing with it. The overarching objective of this research is to make laser aiming more intuitive, precise, and less prone to errors. <br>This project is inspired by the following work: <br>Mattos LS, Caldwell DG. Safe teleoperation based on flexible intraoperative planning for robot-assisted laser microsurgery. In2012 Annual International Conference of the IEEE Engineering in Medicine and Biology Society 2012 Aug 28 (pp. 174-178). IEEE. <br>This project is ongoing in the Comet Lab at Gateway and will be completed May 2026",
+        "role":"Research - Ongoing",
+        "metadata": {
+          "date": "2025-08-01",
+          "images": [
+            "assets/images/laser-robot.png",
+            "assets/images/laser-robot-architecture.png",
+            "assets/images/laser-block.jpeg"
+          ],
+          "videos": [
+            "assets/media/laser-surgery.mp4"
+          ],
+          "media": [
+            "assets/media/Scoping_Doc.pdf"
+          ],
+          "links": [
+            
+          ],
+          "skills": [
+            "Teamwork",
+            "Python",
+            "Real-Time Systems",
+            "Back-End Development",
+            "Image Processing",
+            "Computer Vision",
+            "Robot Kinematics",
+            "Trajectory Planning",
+            "Linux",
+            "System Architecture"
+          ],
+          "categories": [
+            {"filter": "robotics", "relevance": 1.0},
+            {"filter": "software", "relevance": 0.51}
+          ]
+        }
+    },
+    {
       "title": "Smarter Learning Environments",
       "goal": "WPI Interactive Qualifying Project",
       "description": "Environmental conditions in classrooms play a critical role in shaping students' health, cognitive function, and academic performance. A novel environmental data collection/analysis system was developed and deployed to take detailed samples and provide informative visuals of temperature, humidity, air quality, noise, and lighting. Perceptions of environmental factors were evaluated through outreach surveys and one-on-one interviews. Recommendations were proposed to the Universidad de Cádiz to help address deficiencies found in ambient classroom conditions and promote student well-being and learning.",
