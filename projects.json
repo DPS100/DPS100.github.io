@@ -111,8 +111,38 @@
             "Back-End Development"
           ],
           "categories": [
-            {"filter": "data-science-ml", "relevance": 1.0},
+            {"filter": "data-science-ml", "relevance": 0.7},
             {"filter": "software", "relevance": 0.25}
+          ]
+        }
+    },
+    {
+        "title": "Probabalistic Imitation Learning",
+        "goal": "Probabilistic Modeling of Human Actions for RTS Games with Limited Reinforcement Learning Feasibility: A Clash Royale™ Case Study.",
+        "description": "Final project for my graduate Deep Learning class. In this paper, we explore using human replays as a means to train a deep learning model to play the popular real-time strategy game Clash Royale™. This work is inspired by previous reinforcement learning approaches, which we believe are not scalable for Clash Royale™, due to its extremely large card selection, number of possible deck combinations, lack of high-speed API, and difficult-to-identify rewards. We find that our imitation approach is functional but limited in performance when trained on a small dataset, but shows promise if it could be scaled up. We present our findings and takeaways from the entire process, from data collection and label extraction to training and deploying a model to play against real players.",
+        "role":"Co-Author",
+        "metadata": {
+          "date": "2025-12-10",
+          "images": [],
+          "videos": [],
+          "media": ["assets/media/CS541FinalProject__Copy_.pdf"],
+          "links": [
+            {"title": "Github", "link": "https://github.com/chrisrca/CS541-Deep-Learning-Clash-Royale-Project/tree/cards-from-image"},
+            {"title": "HuggingFace", "link": "https://huggingface.co/datasets/chrisrca/clash-royale-tv-replays"}
+          ],
+          "skills": [
+            "Python",
+            "PyTorch",
+            "Computer Vision",
+            "Machine Learning",
+            "Deep Learning",
+            "Data Pipelining",
+            "Data Cleaning",
+            "Image Processing"
+          ],
+          "categories": [
+            {"filter": "data-science-ml", "relevance": 1.0},
+            {"filter": "software", "relevance": 0.4}
           ]
         }
     },
@@ -229,7 +259,7 @@
           ],
           "categories": [
             {"filter": "robotics", "relevance": 0.9},
-            {"filter": "software", "relevance": 0.5}
+            {"filter": "software", "relevance": 0.3}
           ]
         }
     },
@@ -237,7 +267,7 @@
         "title": "Robotic Surgical Laser",
         "goal": "WPI Major Qualifying Project",
         "description": "Lasers are widely used in surgery to perform precise tissue cutting and incisions. The goal of this project is to create an application for an iPad (or other tablet) that allows precise control of a surgical laser using a stylus, such as the Apple Pencil. The idea is to enable surgeons to control the laser as if they were writing with it. The overarching objective of this research is to make laser aiming more intuitive, precise, and less prone to errors. <br>This project is inspired by the following work: <br>Mattos LS, Caldwell DG. Safe teleoperation based on flexible intraoperative planning for robot-assisted laser microsurgery. In2012 Annual International Conference of the IEEE Engineering in Medicine and Biology Society 2012 Aug 28 (pp. 174-178). IEEE. <br>This project is ongoing in the Comet Lab at Gateway and will be completed May 2026",
-        "role":"Research - Ongoing",
+        "role":"Undergraduate Research",
         "metadata": {
           "date": "2025-08-01",
           "images": [
@@ -246,7 +276,9 @@
             "assets/images/laser-block.jpeg"
           ],
           "videos": [
-            "assets/media/laser-surgery.mp4"
+            "assets/media/laser_mobile_control.mp4",
+            "assets/media/laser-surgery.mp4",
+            "assets/media/laser_transformed_view_path.mp4"
           ],
           "media": [
             "assets/media/Scoping_Doc.pdf"
@@ -305,7 +337,7 @@
         ],
         "categories": [
             {"filter": "robotics", "relevance": 0.3},
-            {"filter": "software", "relevance": 1.0},
+            {"filter": "software", "relevance": 0.8},
             {"filter": "data-science-ml", "relevance": 0.2}
         ]
       }
