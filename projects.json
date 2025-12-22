@@ -268,7 +268,7 @@
         }
     },
     {
-        "title": "Robotic Surgical Laser (Major Qualifying Project)",
+        "title": "Robotic Surgical Laser",
         "goal": "Lasers are widely used in surgery to perform precise tissue cutting and incisions. The goal of this researcb is to create an application for an iPad (or other tablet) that allows precise control of a surgical laser using a stylus, such as the Apple Pencil. The idea is to enable surgeons to control the laser as if they were writing with it. The overarching objective of this research is to make laser aiming more intuitive, precise, and less prone to errors. This research is ongoing in the Comet Lab at Gateway and will be completed May 2026.",
         "description": "I'm currently working under Loris Fichera at WPI's COMET Lab, with my current research creating an interface for a 7-DOF Franka Emika robotic arm with a laser end effector for use by a touchscreen device. I own system architecture and deployment, implementing control and data transfer over WebSockets between microservices and edge devices for low-latency teleoperation. Additionally, I am designing control algorithms to respect active constraints/virtual fixtures alongside computer vision algorithms to stabilize the end effector relative to a dynamic work surface. We have conducted stakeholder interviews and produced a fully functional MVP, with ongoing user studies to conclude this project in May of 2026.",
         "role":"Undergraduate Research",
@@ -310,7 +310,7 @@
         }
     },
     {
-      "title": "Smarter Learning Environments (Interactive Qualifying Project)",
+      "title": "Smarter Learning Environments",
       "goal": "Environmental conditions in classrooms play a critical role in shaping students' health, cognitive function, and academic performance. A novel environmental data collection/analysis system was developed and deployed to take detailed samples and provide informative visuals of temperature, humidity, air quality, noise, and lighting. Perceptions of environmental factors were evaluated through outreach surveys and one-on-one interviews. Recommendations were proposed to the Universidad de Cádiz to help address deficiencies found in ambient classroom conditions and promote student well-being and learning.",
       "description": "I spent a semester abroad in Spain working with researchers at the Universidad de Cadiz building embedded IoT modules and a full stack dashboard to monitor indoor air quality. I was responsible for system design and deployment (both hardware and software) and programming embedded modules. Through our research and data-driven discoveries, we found a high concentration of particulate matter in labs with inadequate ventilation.",
       "role":"Co-Author",
