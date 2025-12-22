@@ -171,11 +171,15 @@
     {
         "title": "Autonomous Maze Navigation",
         "goal": "Program a robot to autonomously explore and navigate in an unknown environment.",
-        "description": "The cumulative final project for my Unified Robotics IV: Navigation class to showcase our understanding of robot self localization and mapping (SLAM). The final demo consisted of three parts: Mapping out an unknown maze, returning to the start position, and returning to the start position once again after being relocated to some random position in the maze at a random time. The robot itself is a turtlebot 3 burger running ROS, mapping it's immediate surroundings using a LIDAR sensor. It would report readings back to a host computer over ROS topics, which would estimate the position of the robot to the maze walls using a Kalman filter according to the internal wheel odometry and external wall positions. OpenCV was used to compute unexplored frontiers to investigate. An A* algorithm with a heuristic was used to determine the best frontier and how to navigate to it, and a cubic spline was provided for the turtlebot to follow. When the turtlebot detected it had been disturbed, it used Monte Carlo localization to find where it was in the maze, and return to the starting position.",
+        "description": "The cumulative final project for my Unified Robotics IV: Navigation class to showcase our understanding of robot self localization and mapping (SLAM). The final demo consisted of three parts: Mapping out an unknown maze, returning to the start position, and returning to the start position once again after being relocated to some random position in the maze at a random time. Gazebo and RViz were used to simulate and test code before deployment. The robot itself is a turtlebot 3 burger running ROS, mapping it's immediate surroundings using a LIDAR sensor. It would report readings back to a host computer over ROS topics, which would estimate the position of the robot to the maze walls using a Kalman filter according to the internal wheel odometry and external wall positions. OpenCV was used to compute unexplored frontiers to investigate. An A* algorithm with a heuristic was used to determine the best frontier and how to navigate to it, and a cubic spline was provided for the turtlebot to follow. When the turtlebot detected it had been disturbed, it used Monte Carlo localization to find where it was in the maze, and return to the starting position.",
         "role":"Contributor",
         "metadata": {
           "date": "2024-01-15",
-          "images": [],
+          "images": [
+            "assets/images/3002CSpace.png",
+            "assets/images/3002Deploy.png",
+            "assets/images/3002Map.png"
+          ],
           "videos": [],
           "media": ["assets/media/Lab4_RBE3002_Report (1).pdf"],
           "links": [
@@ -313,7 +317,8 @@
       "metadata": {
         "date": "2025-05-06",
         "images": [
-
+          "assets/images/SLE_Devices.jpg",
+          "assets/images/SLE_Dashboard.png"
         ],
         "videos": [
 
@@ -322,7 +327,8 @@
           "assets/media/Smarter Learning Environments Final Report.pdf"
         ],
         "links": [
-          {"title": "Github", "link": "https://github.com/Smarter-Learning-Environments"}
+          {"title": "Github", "link": "https://github.com/Smarter-Learning-Environments"},
+          {"title": "Paper", "link": "https://digital.wpi.edu/concern/student_works/fx719r37x"}
         ],
         "skills": [
           "Leadership",
