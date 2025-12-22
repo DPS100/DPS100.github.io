@@ -141,7 +141,7 @@
             "Image Processing"
           ],
           "categories": [
-            {"filter": "data-science-ml", "relevance": 1.0},
+            {"filter": "data-science-ml", "relevance": 0.9},
             {"filter": "software", "relevance": 0.4}
           ]
         }
@@ -196,7 +196,7 @@
             "Event-Driven Systems"
           ],
           "categories": [
-            {"filter": "robotics", "relevance": 0.65},
+            {"filter": "robotics", "relevance": 0.86},
             {"filter": "software", "relevance": 0.45}
           ]
         }
@@ -343,7 +343,7 @@
           "Data Pipelining"
         ],
         "categories": [
-            {"filter": "robotics", "relevance": 0.3},
+            {"filter": "robotics", "relevance": 0.4},
             {"filter": "software", "relevance": 0.8},
             {"filter": "data-science-ml", "relevance": 0.2}
         ]
