@@ -49,3 +49,33 @@
           ]
         }
     },
+        {
+        "title": "Portfolio Site",
+        "goal": "Create and self-host a portfolio site.",
+        "description": "A custom and easily configurable portfolio built with Javascript, HTML, and CSS. I can easily incorporate a new project simply by updating a few lines in the projects.json manifest!",
+        "role":"Creator",
+        "metadata": {
+          "date": "2024-01-15",
+          "images": [
+
+          ],
+          "videos": [
+
+          ],
+          "media": [
+
+          ],
+          "links": [
+            {"title": "Github", "link": "https://github.com/DPS100/DPS100.github.io"}
+          ],
+          "skills": [
+            "Javascript",
+            "HTML",
+            "CSS",
+            "Front-End Development"
+          ],
+          "categories": [
+            {"filter": "software", "relevance": 0.5}
+          ]
+        }
+    },
