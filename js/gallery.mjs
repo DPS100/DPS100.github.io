@@ -41,6 +41,7 @@ export class Gallery {
     } 
 
     setImageIndex(index) {
+        // TODO start with loading image, notify to change when viewed
         this.index = index;
         if(this.index < 0) {
             this.index = this.container.length - 1;

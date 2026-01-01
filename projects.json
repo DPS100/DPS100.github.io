@@ -37,7 +37,8 @@
         "metadata": {
           "date": "2024-01-15",
           "images": [
-            "assets/images/whirly-tunes.jpg"
+            "assets/images/whirly-tunes.jpg",
+            "assets/images/whirly_hub.png"
           ],
           "videos": [
             "https://wp.wpi.edu/musicalmachines/files/2023/12/PXL_20231215_192046095.TS_.mp4"
@@ -88,42 +89,13 @@
         }
     },
     {
-        "title": "Data Synthesizer",
-        "goal": "Create a self-taught AI that can synthesize data based on class labels.",
-        "description": "Final project for my graduate Machine Learning class. The goal was to train a supervised image classifier without any manually classified images by using another generative model to build the training dataset. The program will effectively dream by training itself on what it believes an image will look like. Our team created a robust and fault-tolerant synthetic data pipeline to sequentially generate images according to each class label. This was done in order to generate images in parallel across multiple machines without losing progress if one failed. Roughly 4,400 images were generated with stable diffusion over the span of a few days. PyTorch was used to train convolutional neural networks that performed with an accuracy of 90% on testing and validation sets they had never seen real data for. This could also be used to enhance existing datasets, where a model could be pre-trained on synthetic data to learn important features and later fine-tuned on real data.",
-        "role":"Team lead",
-        "metadata": {
-          "date": "2024-01-15",
-          "images": [],
-          "videos": [],
-          "media": ["https://docs.google.com/presentation/d/e/2PACX-1vRED2ZWsUFcxnkx_TggazQzzxoHYn2Ir4EPJD5a2891_L3uKNd2oMGYfmbxnZTrtQ/embed?start=false&loop=true&delayms=3000"],
-          "links": [
-            {"title": "Github", "link": "https://github.com/DPS100/DataSynthesizer"}
-          ],
-          "skills": [
-            "Leadership",
-            "Python",
-            "PyTorch",
-            "Machine Learning",
-            "Data Pipelining",
-            "Data Cleaning",
-            "Image Processing",
-            "Back-End Development"
-          ],
-          "categories": [
-            {"filter": "data-science-ml", "relevance": 0.7},
-            {"filter": "software", "relevance": 0.25}
-          ]
-        }
-    },
-    {
         "title": "Probabalistic Imitation Learning",
         "goal": "Probabilistic Modeling of Human Actions for RTS Games with Limited Reinforcement Learning Feasibility: A Clash Royale™ Case Study.",
         "description": "Final project for my graduate Deep Learning class. In this paper, we explore using human replays as a means to train a deep learning model to play the popular real-time strategy game Clash Royale™. This work is inspired by previous reinforcement learning approaches, which we believe are not scalable for Clash Royale™, due to its extremely large card selection, number of possible deck combinations, lack of high-speed API, and difficult-to-identify rewards. We find that our imitation approach is functional but limited in performance when trained on a small dataset, but shows promise if it could be scaled up. We present our findings and takeaways from the entire process, from data collection and label extraction to training and deploying a model to play against real players.",
         "role":"Co-Author",
         "metadata": {
           "date": "2025-12-10",
-          "images": [],
+          "images": ["assets/images/DLPpic.png"],
           "videos": [],
           "media": ["assets/media/CS541FinalProject__Copy_.pdf"],
           "links": [
@@ -143,28 +115,6 @@
           "categories": [
             {"filter": "data-science-ml", "relevance": 0.9},
             {"filter": "software", "relevance": 0.4}
-          ]
-        }
-    },
-    {
-        "title": "Turing Machine",
-        "goal": "Design and simulate a turing machine to accept string subseqeunces.",
-        "description": "Final project for my Foundations of Computer Science class. This project consisted of two parts: creating a simulator for arbitrary turing machines, and designing a turing machine that could recognize if a string is a subsequence of another string. The turing machine simulator is written in C++ and allows a user to provide a configuration file that defines the alphabet and state machine (essentially an instruction set for how the turing machine will run, defining what action to take and state to transition for each character read). See the readme file in the project github for a more detailed description of the program.",
-        "role":"Creator",
-        "metadata": {
-          "date": "2024-01-15",
-          "images": [],
-          "videos": [],
-          "media": ["https://docs.google.com/presentation/d/e/2PACX-1vSlFCX9cupE4Ocpwg-h5iZdirlppeZMHfgUF3tQu0SgepLnA4FLGahaHRguWaOoqA/embed?start=false&loop=true&delayms=3000"],
-          "links": [
-            {"title": "Github", "link": "https://github.com/DPS100/3133-Turing-Final-Project"}
-          ],
-          "skills": [
-            "C++",
-            "Algorithms"
-          ],
-          "categories": [
-            {"filter": "software", "relevance": 0.1}
           ]
         }
     },
@@ -208,7 +158,7 @@
         "role":"Contributor",
         "metadata": {
           "date": "2024-01-15",
-          "images": [],
+          "images": ["assets/images/OMX.png", "assets/images/Balls.png"],
           "videos": ["https://www.youtube.com/embed/Q2C-VMDZcdc"],
           "media": ["assets/media/Lab5_Report_RBE3001.pdf"],
           "links": [],

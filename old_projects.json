@@ -1,0 +1,51 @@
+  {
+        "title": "Turing Machine",
+        "goal": "Design and simulate a turing machine to accept string subseqeunces.",
+        "description": "Final project for my Foundations of Computer Science class. This project consisted of two parts: creating a simulator for arbitrary turing machines, and designing a turing machine that could recognize if a string is a subsequence of another string. The turing machine simulator is written in C++ and allows a user to provide a configuration file that defines the alphabet and state machine (essentially an instruction set for how the turing machine will run, defining what action to take and state to transition for each character read). See the readme file in the project github for a more detailed description of the program.",
+        "role":"Creator",
+        "metadata": {
+          "date": "2024-01-15",
+          "images": [],
+          "videos": [],
+          "media": ["https://docs.google.com/presentation/d/e/2PACX-1vSlFCX9cupE4Ocpwg-h5iZdirlppeZMHfgUF3tQu0SgepLnA4FLGahaHRguWaOoqA/embed?start=false&loop=true&delayms=3000"],
+          "links": [
+            {"title": "Github", "link": "https://github.com/DPS100/3133-Turing-Final-Project"}
+          ],
+          "skills": [
+            "C++",
+            "Algorithms"
+          ],
+          "categories": [
+            {"filter": "software", "relevance": 0.1}
+          ]
+        }
+    },
+    {
+        "title": "Data Synthesizer",
+        "goal": "Create a self-taught AI that can synthesize data based on class labels.",
+        "description": "Final project for my graduate Machine Learning class. The goal was to train a supervised image classifier without any manually classified images by using another generative model to build the training dataset. The program will effectively dream by training itself on what it believes an image will look like. Our team created a robust and fault-tolerant synthetic data pipeline to sequentially generate images according to each class label. This was done in order to generate images in parallel across multiple machines without losing progress if one failed. Roughly 4,400 images were generated with stable diffusion over the span of a few days. PyTorch was used to train convolutional neural networks that performed with an accuracy of 90% on testing and validation sets they had never seen real data for. This could also be used to enhance existing datasets, where a model could be pre-trained on synthetic data to learn important features and later fine-tuned on real data.",
+        "role":"Team lead",
+        "metadata": {
+          "date": "2024-01-15",
+          "images": [],
+          "videos": [],
+          "media": ["https://docs.google.com/presentation/d/e/2PACX-1vRED2ZWsUFcxnkx_TggazQzzxoHYn2Ir4EPJD5a2891_L3uKNd2oMGYfmbxnZTrtQ/embed?start=false&loop=true&delayms=3000"],
+          "links": [
+            {"title": "Github", "link": "https://github.com/DPS100/DataSynthesizer"}
+          ],
+          "skills": [
+            "Leadership",
+            "Python",
+            "PyTorch",
+            "Machine Learning",
+            "Data Pipelining",
+            "Data Cleaning",
+            "Image Processing",
+            "Back-End Development"
+          ],
+          "categories": [
+            {"filter": "data-science-ml", "relevance": 0.7},
+            {"filter": "software", "relevance": 0.25}
+          ]
+        }
+    },
